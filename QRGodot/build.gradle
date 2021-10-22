@@ -8,14 +8,14 @@ android {
         versionCode 1
         versionName "1.0"
     }
-
     buildToolsVersion '28.0.3' // Older versions may give compile errors
-
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+    productFlavors {
     }
 }
 
@@ -29,6 +29,6 @@ dependencies {
     implementation 'androidx.core:core:1.2.0-beta02'
     implementation 'com.journeyapps:zxing-android-embedded:4.2.0'
     implementation 'androidx.appcompat:appcompat:1.0.2'
-    implementation(name: 'godot-lib.3.3.3.stable.release', ext: 'aar')
+    implementation(name: 'godot-lib.release', ext: 'aar')
 }
 
